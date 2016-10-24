@@ -1,0 +1,119 @@
+.mobile-only {
+	display: auto;
+}
+
+.not-mobile {
+	display: none;
+}
+
+.mobile-menu {
+	display: none;
+}
+
+// Desktop + Laptop
+@media screen and (min-width: 65em) {
+
+	.mobile-only {
+		display: none;
+	}
+
+	.not-mobile {
+		display: block;
+	}
+
+	.nav-menu {
+		background: transparent;
+
+	  li {
+	    //display: inline;
+	    padding-bottom: 1em;
+
+	    &:first-child {
+	      padding-left: 0;
+	    }
+
+	    &:last-child {
+	      //padding-right: 0;
+	    }
+
+	    a {
+	      font-weight: 700;
+	      display: inline;
+	    }
+	  }
+	/*
+	  &.nav-menu-left {
+	  	li {
+	  		&:first-child {
+	  			padding-left: 1em;
+	  		}
+	  		&:last-child {
+	  			padding-right: 0;
+	  		}
+	  	}
+	  }
+
+	  &.nav-menu-right {
+	    li {
+	    float: right;
+
+	    &:last-child {
+	    	padding-left: 0;
+	    }
+
+	    }
+	  }
+	  */
+	}
+	.reader {
+		.wp-caption {
+			max-width: 700px !important;
+			margin: 0 auto;
+
+			p {
+				width: 120%;
+				max-width: 120%;
+				margin-left: -10%;
+			}
+		}
+	}
+
+	.post p > img, .page p > img, .wp-caption > img {
+	  max-width: 120%;
+	  width: 120%;
+	  margin: 2em auto;
+	  margin-left: -10%;
+	}
+
+
+	.md-pull-down {
+		bottom: 0;
+	}
+
+
+	.header {
+	  //position: fixed;
+	  //background: $highlight;
+
+	  .brand-title {
+	  	font-size: 3em;
+	  }
+	}
+	
+	.content {
+	  //padding-top: 2em;
+	}
+	
+	.footer {
+		position: fixed;
+		bottom: 0;
+
+		img {
+			float: right;
+
+		}
+	}
+	
+	
+
+}
